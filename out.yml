@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An AWS Lambda application that calls the Lambda API.
+Resources:
+  function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: s3-listobjects
+      CodeUri:
+        Bucket:
+          Fn::Join:
+          - ''
+          - - Ref: AWS::Region
+            - -bucket-001
+        Key: 0acb1fc8de483bc6ebe379a44e9baf04
+      Handler: com.company.awsdemo.Handler::handleRequest
+      Runtime: java11
+      Description: Java function
+      MemorySize: 2048
+      Timeout: 300
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      - AWSLambda_ReadOnlyAccess
+      - AmazonS3FullAccess
+      Tracing: Active

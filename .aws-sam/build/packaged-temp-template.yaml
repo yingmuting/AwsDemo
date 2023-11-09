@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: com.company.awsdemo.Handler::handleRequest
+      CodeUri: s3://mmt-sam-source-bucket/ffa974c09304d04262d30f4adbf9fe03
+      Runtime: java11

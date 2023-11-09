@@ -1,0 +1,4 @@
+com/company/awsdemo/Test.class
+com/company/awsdemo/Handler.class
+com/company/awsdemo/util/TimeCostUtil.class
+com/company/awsdemo/LambdaS3Manager.class
