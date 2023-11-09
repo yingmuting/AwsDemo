@@ -12,7 +12,6 @@ Resources:
           - - !Ref AWS::Region
             - '-bucket-001'
         Key: '0acb1fc8de483bc6ebe379a44e9baf04'
-#      CodeUri: /Users/whb/IdeaProjects/AwsDemo/target/awsdemo-1.0-SNAPSHOT.jar
       Handler: com.company.awsdemo.Handler::handleRequest
       Runtime: java11
       Description: Java function

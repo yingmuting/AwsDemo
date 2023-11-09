@@ -141,7 +141,7 @@
   <repository>
     <id>aloudai-test</id>
     <name>aloudai-test</name>
-    <url>https://aloudai-952972464070.d.codeartifact.us-east-1.amazonaws.com/maven/test/</url>
+    <url>https://*.codeartifact.us-east-1.amazonaws.com/maven/test/</url>
   </repository>
 </distributionManagement>
 
